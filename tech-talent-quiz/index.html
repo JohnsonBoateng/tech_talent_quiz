@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weighted quiz with AngularJS 1</title>
+
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <html ng-app="weightedQuizApp" ng-controller="weightedQuizAppController">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weighted Quiz Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-animate.min.js"></script>
+  </head>
+
+      
+      
+  <body>
+    <script type="text/ng-template" id="intro.html">
+    <section class="intro">
+      <div class="content">
+        <p>Welcome to the technology graduate questionnaire</p>
+
+        <p>This questionnaire is designed to help you decide which technology stream might be ideal for you</p>
+
+        <p>Let's go!</p>
+      </div>
+      <button class="btn btn-primary pull-right" ng-click="$location.path('/question/1')">Start Quiz</button>
+        
+    </section>
+  </script>
+      
+    <script type="text/ng-template" id="question.html"> 
+    <section class="question">
+      <div class="progress" ng-show="!calculatingScore || inProgress">
+        <div class="progress-bar" progress-bar></div>
+        <p class="pull-right">Question {{currentQuestion}} of {{lastQuestion}}</p>
+      </div>
+      <div ng-show="inProgress">
+        <p class="question-content">{{quizQuestions[currentQuestion-1].question}}</p>
+        <span ng-repeat="option in quizQuestions[currentQuestion-1].options | orderBy: '-'">
+          <button class="btn btn-primary pull-right" ng-click="nextQuestion({'targets': option.targets})">{{option.name}}</button>
+        </span>
+      </div>
+      <div class="almost-finished text-center" ng-show="!inProgress && !calculatingScore">
+        <p>Almost done!</p>
+        <button class="pulse btn btn-primary" ng-click="calculateScore()">Get My Results</button>
+      </div>
+      <div class="loader" ng-show="calculatingScore && !inProgress"></div>
+    </section>         
+  </script>
+  
+    <script type="text/ng-template" id="results.html">
+    <section class="results">
+      <div class="intro">
+        <div class="content">
+          <h2 class="section-header">Your Results</h2>
+          <p>Congratulations. Your responses indicates that...</p>
+        </div>
+      </div>
+      <div class="card" ng-repeat="item in results | limitTo:results.limit">
+        <h2>{{item.resultTitle}}</h2>
+        <p>{{item.description}}</p>
+        <a href={{item.link}}>{{item.link}}</a>
+      </div>
+      <div class="almost-finished text-center">
+        <button ng-show="results.limit === 1" class="btn btn-primary" ng-click="results.limit = null">View All Possible Results</button>
+        <button ng-show="results.limit === null" class="btn btn-primary" ng-click="startOver()"><span class="glyphicon glyphicon-repeat"></span>Retake the Quiz</button>
+      </div>
+    </section>
+  </script>
+      
+
+    <div ng-cloak class="container">
+         <div class= logo>
+       <img src="/logo/bgl-logo-blue%20(2).png" alt="logo"  style ="width:115px"/>
+      </div>
+      <section class="row row-narrow" id="content">
+          
+         
+        <section class="quiz" ng-view>
+            
+        </section>
+      </section>
+    </div>
+  </body>
+
+  </html>
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
