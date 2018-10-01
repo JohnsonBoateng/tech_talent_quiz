@@ -63,8 +63,8 @@ weightedQuizApp.service("quizData", function() {
       resultName: "SE",
       resultTitle: "Software Engineering",
       description:
-        "Software Engineering will be a good choice! " +
-        "You’ll be exposed to the foundations and developing of cool coding, be part of an agile team, working towards evolving the culture of innovation. All of this in the space of 6 rotations!" +
+        "Software Engineering would be a good choice for you! " +
+        "You’ll be exposed to the foundations and development of cool coding and be part of an agile team, working towards evolving our culture of innovation. All of this in the space of six rotations!" +
         " Find out more on ",
       link:
         "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme"
@@ -73,8 +73,8 @@ weightedQuizApp.service("quizData", function() {
       resultName: "DE",
       resultTitle: "Data Engineering",
       description:
-        "Data Engineering will be a good choice! " +
-        "In this pillar, as a Data Engineer you’ll develop and deliver creative and innovative data solutions to enable our business to make well informed decisions, all while getting some great exposure to big data platforms and working with a variety of exciting technologies. This pillar consists of 5 rotations." +
+        "Data Engineering would be a good choice for you! " +
+        "In this pillar, as a Data Engineer you’ll develop and deliver creative and innovative data solutions to enable our business to make well-informed decisions, all while getting some great exposure to big data platforms and working with a variety of exciting technologies. This pillar consists of five rotations." +
         " Find out more on ",
       link:
         "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "
@@ -83,8 +83,8 @@ weightedQuizApp.service("quizData", function() {
       resultName: "BA",
       resultTitle: "Business Analyst",
       description:
-        "Business Analyst will be a good choice! " +
-        "You’ll have the opportunity to build on your analytical thinking, providing insights and problem solving using analysis tools and software, to potentially become a Product Owner after the 5 rotations throughout the business." +
+        "Business Analyst would be a good choice for you! " +
+        "You’ll have the opportunity to build on your analytical thinking, providing insights and problem solving using analysis tools and software, with the potential become a Product Owner after the five rotations throughout the business." +
         " Find out more on ",
       link:
         "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "
@@ -93,8 +93,8 @@ weightedQuizApp.service("quizData", function() {
       resultName: "DA",
       resultTitle: "Data Analyst",
       description:
-        "Data Analyst will be a good choice! " +
-        "Here you’ll build your knowledge of SQL, get to know our data and use programming languages, such as Python, to develop data storytelling and work on projects that have real business impact. This pillar consists of 5 rotations." +
+        "Data Analyst would be a good choice for you! " +
+        "Here you’ll build your knowledge of SQL, get to know our data and use programming languages such as Python to develop data storytelling and work on projects that have real business impact. This pillar consists of five rotations." +
         " Find out more on ",
       link:
         "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "
@@ -103,7 +103,7 @@ weightedQuizApp.service("quizData", function() {
 
   this.quizQuestions = [
     {
-      question: "Which of the following appeals to you the most?",
+      question: "Which of the following appeals to you most?",
       options: [
         {
           name:
@@ -129,7 +129,7 @@ weightedQuizApp.service("quizData", function() {
         },
         {
           name:
-            "Working on gathering data from different sources. Extracting, transforming and loading that into a data warehouse",
+            "Working on gathering data from different sources, extracting, transforming and loading it into a data warehouse",
           targets: [
             {
               target: "DE",
@@ -151,7 +151,7 @@ weightedQuizApp.service("quizData", function() {
         },
         {
           name:
-            "Analysing & interpreting the data from the data warehouse & reporting this to senior management by visualising the data",
+            "Analysing and interpreting data from the data warehouse and reporting this to senior management in visual form",
           targets: [
             {
               target: "DA",
@@ -199,7 +199,7 @@ weightedQuizApp.service("quizData", function() {
       question: "Which languages and technologies are you most likely interested in?",
       options: [
         {
-          name: "C#, Nodejs or React",
+          name: "C#, Node.js or React",
           targets: [
             {
               target: "SE",
@@ -220,7 +220,7 @@ weightedQuizApp.service("quizData", function() {
           ]
         },
         {
-          name: "Scala, Spark, Python or Sql",
+          name: "Scala, Spark, Python or SQL",
           targets: [
             {
               target: "DE",
@@ -262,7 +262,7 @@ weightedQuizApp.service("quizData", function() {
           ]
         },
         {
-          name: "Business process mappings, Business Models or Flow Charts",
+          name: "Business process mappings, business models or flow charts",
           targets: [
             {
               target: "BA",
@@ -285,7 +285,7 @@ weightedQuizApp.service("quizData", function() {
       ]
     },
     {
-      question: "Which one of the following do you see yourself doing...",
+      question: "Which one of the following do you see yourself doing...?",
       options: [
         {
           name: "Building solutions for end users",
@@ -309,7 +309,7 @@ weightedQuizApp.service("quizData", function() {
           ]
         },
         {
-          name: "Capturing & tracking the usage of a given product",
+          name: "Capturing and tracking the usage of a given product",
           targets: [
             {
               target: "DE",
@@ -376,7 +376,7 @@ weightedQuizApp.service("quizData", function() {
     },
     {
       question:
-        "You are working on the next rewards project for our customers. Would you?",
+        "You are working on the next rewards project for our customers. Would you prefer to?",
       options: [
         {
           name:
@@ -423,7 +423,7 @@ weightedQuizApp.service("quizData", function() {
         },
         {
           name:
-            "Come up with a system which will capture how many users have used this reward",
+            "Come up with a system which will capture how many users have used the reward",
           targets: [
             {
               target: "DE",
@@ -445,7 +445,7 @@ weightedQuizApp.service("quizData", function() {
         },
         {
           name:
-            "Analyse where and when the users use these rewards and develop personas to know about different types of users",
+            "Analyse where and when the users use the rewards and develop personas to understand different types of users",
           targets: [
             {
               target: "DA",
@@ -568,8 +568,8 @@ weightedQuizApp.controller("weightedQuizAppController", function(
         resultName: "SE",
         resultTitle: "Software Engineering",
         description:
-          "Software Engineering will be a good choice! " +
-          "You’ll be exposed to the foundations and developing of cool coding, be part of an agile team, working towards evolving the culture of innovation. All of this in the space of 6 rotations!" +
+          "Software Engineering would be a good choice for you! " +
+        "You’ll be exposed to the foundations and development of cool coding and be part of an agile team, working towards evolving our culture of innovation. All of this in the space of six rotations!" +
           " Find out more on ",
         link:
           "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme"
@@ -578,8 +578,8 @@ weightedQuizApp.controller("weightedQuizAppController", function(
         resultName: "DE",
         resultTitle: "Data Engineering",
         description:
-          "Data Engineering will be a good choice! " +
-          "In this pillar, as a Data Engineer you’ll develop and deliver creative and innovative data solutions to enable our business to make well informed decisions, all while getting some great exposure to big data platforms and working with a variety of exciting technologies. This pillar consists of 5 rotations." +
+          "Data Engineering would be a good choice for you! " +
+        "In this pillar, as a Data Engineer you’ll develop and deliver creative and innovative data solutions to enable our business to make well-informed decisions, all while getting some great exposure to big data platforms and working with a variety of exciting technologies. This pillar consists of five rotations." +
           " Find out more on ",
         link:
           "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "
@@ -588,18 +588,18 @@ weightedQuizApp.controller("weightedQuizAppController", function(
         resultName: "BA",
         resultTitle: "Business Analyst",
         description:
-          "Business Analyst will be a good choice! " +
-          "You’ll have the opportunity to build on your analytical thinking, providing insights and problem solving using analysis tools and software, to potentially become a Product Owner after the 5 rotations throughout the business." +
+            "Business Analyst would be a good choice for you! " +
+            "You’ll have the opportunity to build on your analytical thinking, providing insights and problem solving using analysis tools and software, with the potential become a Product Owner after the five rotations throughout the business." +
           " Find out more on ",
         link:
-          "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "
+            "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "
       },
       {
         resultName: "DA",
         resultTitle: "Data Analyst",
         description:
-          "Data Analyst will be a good choice! " +
-          "Here you’ll build your knowledge of SQL, get to know our data and use programming languages, such as Python, to develop data storytelling and work on projects that have real business impact. This pillar consists of 5 rotations." +
+          "Data Analyst would be a good choice for you! " +
+        "Here you’ll build your knowledge of SQL, get to know our data and use programming languages such as Python to develop data storytelling and work on projects that have real business impact. This pillar consists of five rotations." +
           " Find out more on ",
         link:
           "https://www.bglgroup.co.uk/careers/graduate-programmes/technology-programme "

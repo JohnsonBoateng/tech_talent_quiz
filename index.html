@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weighted quiz with AngularJS 1</title>
+  <title>Technology Quiz</title>
 
 
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
@@ -34,9 +34,9 @@
     <script type="text/ng-template" id="intro.html">
     <section class="intro">
       <div class="content">
-        <p>Welcome to the technology graduate questionnaire</p>
+        <p>Welcome to the Tech Grad Quiz</p>
 
-        <p>This questionnaire is designed to help you decide which technology stream might be ideal for you</p>
+        <p>This questionnaire is designed to help you decide which tech role will be the best fit for you</p>
 
         <p>Let's go!</p>
       </div>
@@ -59,7 +59,7 @@
       </div>
       <div class="almost-finished text-center" ng-show="!inProgress && !calculatingScore">
         <p>Almost done!</p>
-        <button class="pulse btn btn-primary" ng-click="calculateScore()">Get My Results</button>
+        <button class="pulse btn btn-primary" ng-click="calculateScore()">Get my results</button>
       </div>
       <div class="loader" ng-show="calculatingScore && !inProgress"></div>
     </section>         
@@ -69,8 +69,8 @@
     <section class="results">
       <div class="intro">
         <div class="content">
-          <h2 class="section-header">Your Results</h2>
-          <p>Congratulations. Your responses indicates that...</p>
+          <h2 class="section-header">Your results</h2>
+          <p>Congratulations! Your responses indicates that...</p>
         </div>
       </div>
       <div class="card" ng-repeat="item in results | limitTo:results.limit">
@@ -79,8 +79,8 @@
         <a href={{item.link}}>{{item.link}}</a>
       </div>
       <div class="almost-finished text-center">
-        <button ng-show="results.limit === 1" class="btn btn-primary" ng-click="results.limit = null">View All Possible Results</button>
-        <button ng-show="results.limit === null" class="btn btn-primary" ng-click="startOver()"><span class="glyphicon glyphicon-repeat"></span>Retake the Quiz</button>
+        <button ng-show="results.limit === 1" class="btn btn-primary" ng-click="results.limit = null">View all possible results</button>
+        <button ng-show="results.limit === null" class="btn btn-primary" ng-click="startOver()"><span class="glyphicon glyphicon-repeat"></span>Retake the quiz</button>
       </div>
     </section>
   </script>
