@@ -285,7 +285,7 @@ weightedQuizApp.service("quizData", function() {
       ]
     },
     {
-      question: "Which one of the following do you see yourself doing...?",
+      question: "Which one of the following do you see yourself doing?",
       options: [
         {
           name: "Building solutions for end users",
